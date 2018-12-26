@@ -1,0 +1,9 @@
+<ui-prop name="显示属性" tooltip="">
+    <ui-select class="flex-1" @change="onSetDataEnum" v-value="target.mDataEnum.value">
+        <option value="GameData.instance.score"> Score</option>
+        <option value="GameData.instance.depth"> Depth</option>
+    </ui-select>
+</ui-prop>
+
+<ui-prop name="小数点保留位数" type="number" slidable
+min="0" step="1" v-prop="target.mFixNum"></ui-prop>

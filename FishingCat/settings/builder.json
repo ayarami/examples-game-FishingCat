@@ -1,0 +1,42 @@
+{
+  "appKey": "",
+  "appSecret": "",
+  "encryptJs": true,
+  "excludeScenes": [
+    "0d9523d8-43d1-49bb-85aa-ba111c4f424d"
+  ],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": true,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.FishingCat",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "startScene": "89478af4-4ece-48d7-a2af-fbd11880071e",
+  "title": "FishingCat",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "https://www.zzxgame.com.cn/Fishing",
+    "appid": "wxa73be54be6dafecf",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": "FishingCatSub"
+  },
+  "xxteaKey": "0e16dc01-9716-4d",
+  "zipCompressJs": true
+}

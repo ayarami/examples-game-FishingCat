@@ -1,0 +1,81 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "HookAnim",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.75,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0.25,
+          "value": [
+            0,
+            0
+          ],
+          "curve": "linear"
+        },
+        {
+          "frame": 0.4,
+          "value": [
+            0,
+            -181.1
+          ],
+          "curve": "sineOut"
+        },
+        {
+          "frame": 0.75,
+          "value": [
+            0,
+            -617
+          ]
+        }
+      ]
+    },
+    "paths": {
+      "Controller": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.4,
+              "value": true
+            }
+          ]
+        }
+      },
+      "Line": {
+        "props": {
+          "active": [
+            {
+              "frame": 0,
+              "value": false
+            },
+            {
+              "frame": 0.4,
+              "value": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.4166666666666667,
+      "func": "DisableTouch",
+      "params": []
+    },
+    {
+      "frame": 0.75,
+      "func": "EnableTouch",
+      "params": []
+    }
+  ]
+}

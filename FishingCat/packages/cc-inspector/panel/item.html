@@ -1,0 +1,1 @@
+<div><div class="layout horizontal center item" :class="isSelected()" @click="onBtnClickItem"><i id="foldIcon" v-el:foldicon :class="foldIconClass()" @click="onBtnClickFold"></i> <span :class="getNameColor()">{{data.name}}</span></div><div v-show="!isFolded()" class="children" v-for="item in data.children"><inspector-item :data="item"></inspector-item></div></div>

@@ -1,0 +1,85 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "FishAnim1",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 60,
+  "speed": 0.5,
+  "wrapMode": "2",
+  "curveData": {
+    "props": {
+      "scaleY": [
+        {
+          "frame": 0,
+          "value": 1
+        },
+        {
+          "frame": 0.25,
+          "value": 1.2
+        },
+        {
+          "frame": 0.5,
+          "value": 1
+        },
+        {
+          "frame": 0.75,
+          "value": 1.2
+        },
+        {
+          "frame": 1,
+          "value": 1
+        },
+        {
+          "frame": 1.25,
+          "value": 1.2
+        },
+        {
+          "frame": 1.5,
+          "value": 1
+        },
+        {
+          "frame": 1.75,
+          "value": 1.2
+        },
+        {
+          "frame": 2,
+          "value": 1
+        }
+      ],
+      "scaleX": [
+        {
+          "frame": 0,
+          "value": 1,
+          "curve": "constant"
+        },
+        {
+          "frame": 1,
+          "value": -1,
+          "curve": "constant"
+        },
+        {
+          "frame": 2,
+          "value": 1
+        }
+      ],
+      "x": [
+        {
+          "frame": 0,
+          "value": 0,
+          "curve": "sineInOut"
+        },
+        {
+          "frame": 1,
+          "value": 640,
+          "curve": "sineInOut"
+        },
+        {
+          "frame": 2,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}
