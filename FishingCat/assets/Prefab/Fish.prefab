@@ -55,7 +55,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": -169,
       "y": 0,
       "z": 0
     },
@@ -117,7 +117,6 @@
     },
     "_enabled": true,
     "mSpeed": 2,
-    "AnimName": 1,
     "_id": ""
   },
   {
@@ -154,19 +153,7 @@
     },
     "_clips": [
       {
-        "__uuid__": "20eef328-a720-4443-b21f-62041c65932f"
-      },
-      {
-        "__uuid__": "d527e941-c6dd-43fd-aad7-f0746e047574"
-      },
-      {
         "__uuid__": "daea7ead-e0d8-44cb-9353-68035dc8b4a2"
-      },
-      {
-        "__uuid__": "4c2ab1c5-e30d-4206-87bb-71ea1b8d8157"
-      },
-      {
-        "__uuid__": "cd54bf44-71a2-45b3-9b0a-9bddf1eaf23a"
       }
     ],
     "playOnLoad": false,

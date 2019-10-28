@@ -39,6 +39,10 @@ cc.Class({
             default : 0,
             visible : false
         },
+        mController : {
+            default : null,
+            type : cc.Node
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -54,8 +58,9 @@ cc.Class({
         GameData.instance.score = 0;
         //清除鱼钩上挂着的鱼
         this.mFishPool.removeAllChildren(true);
-
-        this.mIndex = 0;
+        //清除海里面的所有鱼
+        this.mController.removeAllChildren(true);
+        this.mController.x = 0;
     },
 
     start () {
@@ -63,15 +68,12 @@ cc.Class({
     },
 
     update (dt) {
-        console.log(dt);
         var depth = Math.abs(this.mHook.y) / 100;
         this.mDepth = Math.floor(depth);// 100pixel = 1 m
         let data = this.mSceneData.json[this.mIndex];
         if (data != undefined && this.mDepth >= data.depth)//到达配置的位置时，生成一只鱼
         {
             var fish = cc.instantiate(this.mPrefab);
-            var fishScript = fish.getComponent("Fish");
-            fishScript.AnimName = data.animIdx;
 
             cc.loader.loadRes(data.res,cc.SpriteFrame,function(err,spriteFrame){
                 if (!err)

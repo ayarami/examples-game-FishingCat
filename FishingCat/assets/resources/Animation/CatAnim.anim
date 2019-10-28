@@ -163,23 +163,13 @@
           }
         ]
       }
-    },
-    "paths": {
-      "Line": {
-        "props": {
-          "active": [
-            {
-              "frame": 0,
-              "value": false
-            },
-            {
-              "frame": 0.38333333333333336,
-              "value": true
-            }
-          ]
-        }
-      }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.4,
+      "func": "OnAnimEnd",
+      "params": []
+    }
+  ]
 }

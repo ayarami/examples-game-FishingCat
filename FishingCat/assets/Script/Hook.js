@@ -8,6 +8,8 @@
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
+var EndUI = require("EndUI");
+
 cc.Class({
     extends: cc.Component,
 
@@ -17,14 +19,13 @@ cc.Class({
             default : false,
             visible : false
         },
+        mEndUI : cc.Node,
+        mController : cc.Node
     },
 
     // LIFE-CYCLE CALLBACKS:
 
-    onLoad () {
-        cc.MsgCenter.on("StartLine", this.StartLine, this);
-        cc.MsgCenter.on("GetFish", this.RegainLine, this);
-    },
+    // onLoad () {},
 
     start () {
         //this.StartLine();
@@ -42,6 +43,7 @@ cc.Class({
     },
 
     RegainLine () {//收杆
+        let self = this;
         if (this.isRegaining)
             return;
         this.node.stopAllActions();//停止下沉动作
@@ -51,9 +53,22 @@ cc.Class({
             cc.moveTo(duration, cc.v2(0,0)).easing(cc.easeSineIn()),
             cc.callFunc(function (){
                 //显示结束界面
-                cc.MsgCenter.emit('EndUI-Show');
+                var ui = self.mEndUI.getComponent("EndUI");
+                ui.Show();
             })
         ));//收杆动作，通过easing来优化效果
         this.isRegaining = true;
     },
+
+    EnableTouch () {
+        var controller = this.mController.getComponent("Controller");
+        controller.EnableTouch();
+    },
+
+    DisableTouch () {
+        var controller = this.mController.getComponent("Controller");
+        controller.DisableTouch();
+    }
+
+    // update (dt) {},
 });

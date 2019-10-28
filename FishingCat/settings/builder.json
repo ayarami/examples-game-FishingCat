@@ -2,9 +2,7 @@
   "appKey": "",
   "appSecret": "",
   "encryptJs": true,
-  "excludeScenes": [
-    "0d9523d8-43d1-49bb-85aa-ba111c4f424d"
-  ],
+  "excludeScenes": [],
   "fb-instant-games": {},
   "includeAnySDK": false,
   "includeSDKBox": false,
@@ -32,7 +30,7 @@
   "webOrientation": "auto",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "https://www.zzxgame.com.cn/Fishing",
-    "appid": "wxa73be54be6dafecf",
+    "appid": "wx6ac3f5090a6b99c5",
     "isSubdomain": false,
     "orientation": "portrait",
     "subContext": "FishingCatSub"
