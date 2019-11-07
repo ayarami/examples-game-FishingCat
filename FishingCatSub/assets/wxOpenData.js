@@ -94,13 +94,36 @@ cc.Class({
     //好友游戏数据排序，按得分从高到低
     SortFriendGameData () {
         var compareScore = function (x, y) {//比较得分
+
+            //由于使用这个demo的一些同学上传的数据不规范
+            //这样会导致排行榜排序错误，无法显示排行榜
+            //所以这里加了一段暴力的代码，只要发现数据没有读取出来，直接重制
+            if (x.KVDataList.length !== 2)
+            {
+                x.KVDataList =[
+                    { "key":'depth', "value": "0" },
+                    { "key":'score', "value": "0" }
+                ]
+            }
+            if (y.KVDataList.length !== 2) {
+                y.KVDataList =[
+                    { "key":'depth', "value": "0" },
+                    { "key":'score', "value": "0" }
+                ]
+            }
             var value1 = parseInt(x.KVDataList[0].value);
             var value2 = parseInt(y.KVDataList[0].value);
-            if (value1 <= value2) {
-                return 1;
-            } else if (value1 > value2) {
+            if (value1 && value2) {
+                if (value1 <= value2) {
+                    return 1;
+                } else if (value1 > value2) {
+                    return -1;
+                }
+            }
+            else {
                 return -1;
             }
+
         }
 
         GameData.instance.friendData.sort(compareScore);

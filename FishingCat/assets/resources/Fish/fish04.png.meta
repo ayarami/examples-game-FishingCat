@@ -1,13 +1,16 @@
 {
-  "ver": "2.2.0",
+  "ver": "2.3.3",
   "uuid": "5e77da1e-59ac-440d-bfbf-bdd198c6c132",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
   "subMetas": {
     "fish04": {
-      "ver": "1.0.3",
+      "ver": "1.0.4",
       "uuid": "2191ccab-dc1f-4824-92cd-6ad700d8b5f1",
       "rawTextureUuid": "5e77da1e-59ac-440d-bfbf-bdd198c6c132",
       "trimType": "auto",

@@ -9,7 +9,7 @@
   "inlineSpriteFrames": true,
   "inlineSpriteFrames_native": true,
   "jailbreakPlatform": false,
-  "md5Cache": true,
+  "md5Cache": false,
   "mergeStartScene": false,
   "oauthLoginServer": "",
   "optimizeHotUpdate": false,
@@ -36,5 +36,25 @@
     "subContext": ""
   },
   "xxteaKey": "a7742a77-27d0-47",
-  "zipCompressJs": true
+  "zipCompressJs": true,
+  "android": {
+    "packageName": "org.cocos2d.FishingCatSub"
+  },
+  "ios": {
+    "packageName": "org.cocos2d.FishingCatSub"
+  },
+  "mac": {
+    "packageName": "org.cocos2d.FishingCatSub"
+  },
+  "win32": {},
+  "android-instant": {
+    "REMOTE_SERVER_ROOT": "",
+    "host": "",
+    "packageName": "org.cocos2d.FishingCatSub",
+    "pathPattern": "",
+    "recordPath": "",
+    "scheme": "https",
+    "skipRecord": false
+  },
+  "appBundle": false
 }
